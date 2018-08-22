@@ -86,12 +86,12 @@ const styles = StyleSheet.create({
 
 
 animatedPopup.PropTypes = {
-  animatedFrom: PropTypes.oneOf(['Left', 'Right'),
+  animateFrom: PropTypes.oneOf(['Left', 'Right'),
   visible: PropTypes.bool.isRequired,
   close: PropTypes.func.isRequired,
   children: PropTypes.node.isRequired
 };
 
 animatedPopup.defaultProps = {
-  animatedFrom: 'Left'
+  animateFrom: 'Left'
 };
