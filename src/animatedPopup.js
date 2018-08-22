@@ -32,7 +32,7 @@ export default class animatedPopup extends React.Component {
     } = this.props;
   
     const animatingStyle = {
-      ['margin' + animateFrom]: this.animagedValue
+      ['margin' + animateFrom]: this.animatedValue
     };
     
     return (
