@@ -25,14 +25,14 @@ export default class animatedPopup extends React.Component {
   
   render() {
     const {
-      animateFrom,
+      animateTo,
       visible,
       close,
       children
     } = this.props;
   
     const animatingStyle = {
-      ['margin' + animateFrom]: this.animatedValue
+      ['margin' + animateTo]: this.animatedValue
     };
     
     return (
@@ -85,13 +85,13 @@ const styles = StyleSheet.create({
 });
 
 
-animatedPopup.PropTypes = {
-  animateFrom: PropTypes.oneOf(['Left', 'Right'),
+animatedPopup.propTypes = {
+  animateTo: PropTypes.oneOf(['Left', 'Right']),
   visible: PropTypes.bool.isRequired,
   close: PropTypes.func.isRequired,
   children: PropTypes.node.isRequired
 };
 
 animatedPopup.defaultProps = {
-  animateFrom: 'Left'
+  animateTo: 'Right'
 };
