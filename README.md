@@ -1,6 +1,8 @@
 # react-native-animated-popup
 AnimatedPopup Component can be used to open popup window of your choice with animation.
 
+<img src='https://github.com/dev-dano/react-native-animated-popup/blob/master/src/Example.gif?raw=true' width="25%" height="25%">
+
 ## Example
 ```js
 import React from 'react';
@@ -41,5 +43,3 @@ export default home extends React.Component {
 ...
 
 ```
-
-## Use Case
