@@ -28,6 +28,7 @@ export default class animatedPopup extends React.Component {
       animateTo,
       visible,
       close,
+      popupContainerStyle,
       children
     } = this.props;
   
@@ -49,6 +50,7 @@ export default class animatedPopup extends React.Component {
           pointerEvents='box-none'
           style={[
             styles.popupContainer,
+            popupContainerStyle && popupContainerStyle,
             animatingStyle
           ]}>
           {children}
@@ -89,6 +91,7 @@ animatedPopup.propTypes = {
   animateTo: PropTypes.oneOf(['Left', 'Right']),
   visible: PropTypes.bool.isRequired,
   close: PropTypes.func.isRequired,
+  popupContainerStyle: PropTypes.any,
   children: PropTypes.node.isRequired
 };
 
