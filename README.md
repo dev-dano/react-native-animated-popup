@@ -26,8 +26,8 @@ export default home extends React.Component {
         />
         <AnimatedPopup
           animateTo = 'Right'
-          visible     = {this.state.visible}
-          close       = {() => { this.setState({ visible: false }) }}>
+          visible   = {this.state.visible}
+          close     = {() => { this.setState({ visible: false }) }}>
 
           <LoginForm
             ...
